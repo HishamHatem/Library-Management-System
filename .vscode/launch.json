@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run C Program (GCC)",
+            "type": "cppdbg", // Use 'cppvsdbg' if using MSVC compiler
+            "request": "launch",
+            "program": "${workspaceFolder}/output/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, // Important for console input (scanf, _getch)
+            "MIMode": "gdb", // Assumes GDB (MinGW/Cygwin). Change if needed.
+            // "miDebuggerPath": "/path/to/your/gdb.exe", // Uncomment and set if gdb is not in PATH
+            "preLaunchTask": "build C project", // Runs the build task defined in tasks.json first
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}           "request": "launch",
+            "program": "${workspaceFolder}/output/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, // Important for console input (scanf, _getch)
+            "MIMode": "gdb", // Assumes GDB (MinGW/Cygwin). Change if needed.
+            // "miDebuggerPath": "/path/to/your/gdb.exe", // Uncomment and set if gdb is not in PATH
+            "preLaunchTask": "build C project", // Runs the build task defined in tasks.json first
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

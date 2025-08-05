@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C project",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "doubly_linked_list.c",
+                "library_management.c",
+                "general.c",
+                "-o",
+                "output/main.exe", // Output executable to 'output' folder
+                "-I.", // Include current directory for header files
+                "-g" // Include debug symbols
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compiles the C project using GCC."
+        }
+    ]
+}
